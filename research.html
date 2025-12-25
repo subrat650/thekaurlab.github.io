@@ -6,10 +6,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav>
+
+<nav class="navbar">
   <div class="nav-container">
     <div class="logo">The Kaur Lab</div>
-    <ul>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="people.html">People</a></li>
@@ -18,15 +19,64 @@
     </ul>
   </div>
 </nav>
-<section class="content">
-  <h2>Research Areas</h2>
-  <h3>Photosynthesis & Energy Conversion</h3>
-  <p>Computational studies of photosynthetic protein complexes.</p>
-  <h3>Interfacial Water & Hydration Effects</h3>
-  <p>Role of water structure and dynamics at biomolecular interfaces.</p>
-  <h3>Molecular Dynamics & QM/MM</h3>
-  <p>Classical and hybrid simulation approaches.</p>
+
+<header class="hero small-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1>Research</h1>
+    <p>Scientific themes and ongoing projects</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="card-container">
+
+    <div class="card">
+      <h3>Photosynthetic Systems</h3>
+      <p>
+        Computational investigation of Photosystem I and II, including
+        pigment–protein interactions, energy transfer, and redox processes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Interfacial Water</h3>
+      <p>
+        Structure and dynamics of hydration water near proteins and cofactors,
+        and its role in stability, function, and energy landscapes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Molecular Dynamics Simulations</h3>
+      <p>
+        Classical MD simulations of biomolecular systems using AMBER and related
+        tools to understand conformational dynamics.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>QM/MM & Electronic Structure</h3>
+      <p>
+        Hybrid QM/MM calculations to study electronic properties, charge
+        transfer, and reaction mechanisms in complex biomolecules.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Multiscale Modeling</h3>
+      <p>
+        Bridging atomistic and coarse-grained approaches to capture biological
+        processes across length and time scales.
+      </p>
+    </div>
+
+  </div>
 </section>
-<footer>© The Kaur Lab</footer>
+
+<footer>
+  © The Kaur Lab
+</footer>
+
 </body>
 </html>
