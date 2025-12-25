@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,58 +8,87 @@
 </head>
 <body>
 
-<nav>
+<!-- NAVBAR -->
+<nav class="navbar">
   <div class="nav-container">
     <div class="logo">The Kaur Lab</div>
-    <ul>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
+      <li><a href="people.html" class="active">People</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </nav>
 
+<!-- PEOPLE PAGE LAYOUT -->
 <div class="people-container">
 
-  <!-- LEFT FIXED PI -->
-  <div class="pi-panel">
-    <div class="pi-photo"></div>
+  <!-- LEFT: FIXED PI PANEL -->
+  <aside class="pi-panel">
+    <div class="pi-photo">
+      <!-- <img src="images/matta.jpg" alt="Dr. Divya Kaur Matta"> -->
+    </div>
+
     <h2>Dr. Divya Kaur Matta</h2>
-    <p><strong>Principal Investigator</strong></p>
-    <p>
-      Computational biophysicist focusing on molecular simulations,
-      photosynthesis, and energy conversion.
+    <p class="pi-title">Principal Investigator</p>
+
+    <p class="pi-desc">
+      Computational biophysicist working on molecular dynamics simulations,
+      photosynthetic complexes, interfacial water, and energy conversion
+      using multiscale and QM/MM approaches.
     </p>
-  </div>
+  </aside>
 
-  <!-- RIGHT SCROLLABLE -->
-  <div class="people-scroll">
+  <!-- RIGHT: SCROLLABLE CONTENT -->
+  <main class="people-scroll">
 
-    <h2>Group Members</h2>
+    <!-- GROUP MEMBERS -->
+    <section class="section">
+      <h2>Group Members</h2>
 
-    <div class="member-card">
-      <div class="member-photo"></div>
-      <div>
-        <h3>Student Name</h3>
-        <p>PhD / MSc Student</p>
-        <p>Research interest description.</p>
+      <div class="member-card">
+        <div class="member-photo">
+          <!-- <img src="images/student1.jpg"> -->
+        </div>
+        <div class="member-info">
+          <h3>Subrat Kumar Sethy</h3>
+          <p><strong>PhD Student</strong></p>
+          <p>Molecular dynamics simulations of photosystem I, interfacial water,
+             hydrogen bond dynamics, and QM/MM studies.</p>
+        </div>
       </div>
-    </div>
 
-    <h2>Alumni</h2>
-
-    <div class="member-card">
-      <div class="member-photo"></div>
-      <div>
-        <h3>Alumni Name</h3>
-        <p>Now at / Current Position</p>
+      <div class="member-card">
+        <div class="member-photo"></div>
+        <div class="member-info">
+          <h3>Student Name</h3>
+          <p><strong>MSc / PhD Student</strong></p>
+          <p>Research interest description.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
+    <!-- ALUMNI -->
+    <section class="section">
+      <h2>Alumni</h2>
+
+      <div class="member-card alumni">
+        <div class="member-photo"></div>
+        <div class="member-info">
+          <h3>Alumni Name</h3>
+          <p>Now at: Institute / Company</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
 </div>
+
+<footer>
+  © The Kaur Lab
+</footer>
 
 </body>
 </html>
