@@ -144,3 +144,21 @@ footer {
   background: #eee;
   margin-top: 50px;
 }
+
+.small-hero {
+  height: 50vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #1f3a5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #162a45;
+}
