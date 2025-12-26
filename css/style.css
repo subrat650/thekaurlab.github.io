@@ -202,3 +202,39 @@ footer {
     text-align: center;
   }
 }
+
+/* ================= ICON BUTTONS ================= */
+.icon-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.icon-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0f2341;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-links a:hover {
+  text-decoration: underline;
+}
+
+/* ================= BUTTON ================= */
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #0f2341;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.button:hover {
+  background: #163a6b;
+}
