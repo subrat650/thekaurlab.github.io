@@ -1,21 +1,23 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Kaur Lab</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
-<script src="js/script.js"></script>
 
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-container">
+
     <div class="logo">The Kaur Lab</div>
 
-    <ul class="nav-links" id="navLinks">
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="people.html">People</a></li>
@@ -24,15 +26,15 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <!-- RIGHT CONTROLS -->
     <div class="nav-controls">
-      <button id="darkToggle">🌙</button>
+      <button id="darkToggle" class="dark-btn">🌙</button>
+      <button id="menuToggle" class="menu-toggle">☰</button>
     </div>
+
   </div>
 </nav>
 
-
-<!-- HERO SECTION -->
+<!-- HERO -->
 <header class="hero">
   <div class="hero-overlay"></div>
   <div class="hero-text">
@@ -52,11 +54,11 @@
   </p>
 </section>
 
-<!-- RESEARCH CARDS -->
+<!-- RESEARCH -->
 <section class="section light">
   <h2>Our Research</h2>
-  <div class="card-container">
 
+  <div class="card-container">
     <div class="card">
       <h3>Photosynthetic Complexes</h3>
       <p>Structure–function relationships in Photosystem I & II.</p>
@@ -71,7 +73,6 @@
       <h3>QM/MM & Multiscale Modeling</h3>
       <p>Electronic structure and energy transfer mechanisms.</p>
     </div>
-
   </div>
 </section>
 
@@ -79,5 +80,7 @@
   © The Kaur Lab
 </footer>
 
+<!-- JS -->
+<script src="js/script.js"></script>
 </body>
 </html>
