@@ -5,13 +5,16 @@
   <title>The Kaur Lab</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+<script src="js/main.js"></script>
+
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-container">
     <div class="logo">The Kaur Lab</div>
-    <ul class="nav-links">
+
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="people.html">People</a></li>
@@ -19,8 +22,15 @@
       <li><a href="news.html">News</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <!-- RIGHT CONTROLS -->
+    <div class="nav-controls">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button id="darkToggle">🌙</button>
+    </div>
   </div>
 </nav>
+
 
 <!-- HERO SECTION -->
 <header class="hero">
