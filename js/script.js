@@ -1,49 +1,46 @@
-/* =====================
-   DARK MODE TOGGLE
-   ===================== */
+console.log("script.js loaded");
 
-const darkToggle = document.getElementById("darkToggle");
+document.addEventListener("DOMContentLoaded", () => {
 
-darkToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");   // ✅ CHANGE HERE
+  const darkToggle = document.getElementById("darkToggle");
+  const searchInput = document.getElementById("searchInput");
 
-  // Change icon
-  if (document.body.classList.contains("dark")) {   // ✅ CHANGE HERE
-    darkToggle.textContent = "☀️";
-    localStorage.setItem("theme", "dark");
-  } else {
-    darkToggle.textContent = "🌙";
-    localStorage.setItem("theme", "light");
+  if (!darkToggle) {
+    console.error("darkToggle button NOT found");
   }
-});
 
-/* Load saved theme */
-window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark");   // ✅ CHANGE HERE
-    darkToggle.textContent = "☀️";
+  if (!searchInput) {
+    console.error("searchInput NOT found");
   }
-});
 
+  /* ===== DARK MODE ===== */
+  darkToggle?.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
 
-/* =====================
-   SEARCH FUNCTION
-   ===================== */
-
-const searchInput = document.getElementById("searchInput");
-
-searchInput.addEventListener("keyup", () => {
-  const query = searchInput.value.toLowerCase();
-  const searchableElements = document.querySelectorAll(
-    "h1, h2, h3, p, li"
-  );
-
-  searchableElements.forEach(el => {
-    if (el.textContent.toLowerCase().includes(query) && query !== "") {
-      el.style.backgroundColor = "rgba(255, 255, 0, 0.3)";
+    if (document.body.classList.contains("dark")) {
+      darkToggle.textContent = "☀️";
+      localStorage.setItem("theme", "dark");
     } else {
-      el.style.backgroundColor = "transparent";
+      darkToggle.textContent = "🌙";
+      localStorage.setItem("theme", "light");
     }
   });
+
+  /* Load saved theme */
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    darkToggle.textContent = "☀️";
+  }
+
+  /* ===== SEARCH ===== */
+  searchInput?.addEventListener("keyup", () => {
+    const query = searchInput.value.toLowerCase();
+    document.querySelectorAll("h1, h2, h3, p, li").forEach(el => {
+      el.style.backgroundColor =
+        query && el.textContent.toLowerCase().includes(query)
+          ? "rgba(255,255,0,0.3)"
+          : "transparent";
+    });
+  });
+
 });
