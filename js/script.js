@@ -3,14 +3,9 @@ console.log("script.js loaded");
 document.addEventListener("DOMContentLoaded", () => {
 
   const darkToggle = document.getElementById("darkToggle");
-  const searchInput = document.getElementById("searchInput");
 
   if (!darkToggle) {
     console.error("darkToggle button NOT found");
-  }
-
-  if (!searchInput) {
-    console.error("searchInput NOT found");
   }
 
   /* ===== DARK MODE ===== */
