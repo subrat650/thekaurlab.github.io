@@ -1,7 +1,6 @@
 /* =========================
    COLOR VARIABLES
-   ========================= */
-
+========================= */
 :root {
   --bg-color: #ffffff;
   --text-color: #222222;
@@ -20,8 +19,7 @@ body.dark {
 
 /* =========================
    GENERAL
-   ========================= */
-
+========================= */
 body {
   margin: 0;
   padding-top: 70px;
@@ -32,28 +30,26 @@ body {
   transition: background-color 0.35s, color 0.35s;
 }
 
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
 .section {
   padding: 70px 10%;
   text-align: center;
 }
 
-.section.light {
+.section.light-bg {
   background: #f5f7fa;
 }
 
-body.dark .section.light {
+body.dark .section.light-bg {
   background: #020617;
-}
-
-.section-text {
-  max-width: 900px;
-  margin: auto;
 }
 
 /* =========================
    NAVBAR
-   ========================= */
-
+========================= */
 .navbar {
   position: fixed;
   width: 100%;
@@ -79,7 +75,6 @@ body.dark .section.light {
   list-style: none;
   display: flex;
   gap: 25px;
-  align-items: center;
 }
 
 .nav-links a {
@@ -92,24 +87,25 @@ body.dark .section.light {
   border-bottom: 2px solid #fff;
 }
 
-/* Buttons */
-.dark-btn,
-.menu-toggle {
+.dark-btn {
   background: none;
   border: none;
-  color: white;
+  color: #fff;
   font-size: 20px;
   cursor: pointer;
 }
 
 /* =========================
    HERO
-   ========================= */
-
+========================= */
 .hero {
   height: 65vh;
   background: url("../images/hero.png") center/cover no-repeat;
   position: relative;
+}
+
+.small-hero {
+  height: 50vh;
 }
 
 .hero-overlay {
@@ -133,62 +129,103 @@ body.dark .section.light {
 }
 
 /* =========================
-   CARDS
-   ========================= */
-
-.card-container {
+   PEOPLE GRID (CRITICAL FIX)
+========================= */
+.people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
 }
 
-.card {
+.person-card {
   background: var(--card-bg);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s, background-color 0.3s;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-8px);
+.person-card:hover {
+  transform: translateY(-6px);
+}
+
+.person-img {
+  width: 100%;
+  height: 220px;           /* FIXED HEIGHT */
+  background: #dcdcdc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.person-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* IMPORTANT */
+  border-radius: 10px;
+}
+
+/* =========================
+   PI SECTION
+========================= */
+.pi-card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.pi-image {
+  width: 100%;
+  height: 300px;
+  background: #dcdcdc;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.pi-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pi-content h3 {
+  font-size: 28px;
+}
+
+.pi-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   ALUMNI
+========================= */
+.person-card.alumni {
+  opacity: 0.85;
+  background: #fafafa;
 }
 
 /* =========================
    FOOTER
-   ========================= */
-
+========================= */
 footer {
   text-align: center;
   padding: 20px;
   background: var(--footer-bg);
-  transition: background-color 0.35s;
+  margin-top: 50px;
 }
 
 /* =========================
    RESPONSIVE
-   ========================= */
-
+========================= */
 @media (max-width: 768px) {
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: var(--nav-bg);
-    flex-direction: column;
-    width: 200px;
-    padding: 20px;
-    display: none;
-  }
-
-  .nav-links.show {
-    display: flex;
+  .pi-card {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .hero-text h1 {
