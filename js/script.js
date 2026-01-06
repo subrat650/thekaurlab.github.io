@@ -3,13 +3,23 @@ console.log("script.js loaded");
 document.addEventListener("DOMContentLoaded", () => {
 
   const darkToggle = document.getElementById("darkToggle");
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.querySelector(".nav-links");
 
-  if (!darkToggle) {
-    console.error("darkToggle button NOT found");
+  /* ===== LOAD THEME ===== */
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme) {
+    document.body.classList.toggle("dark", savedTheme === "dark");
+    darkToggle.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+  } else {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.body.classList.toggle("dark", prefersDark);
+    darkToggle.textContent = prefersDark ? "☀️" : "🌙";
   }
 
-  /* ===== DARK MODE ===== */
-  darkToggle?.addEventListener("click", () => {
+  /* ===== DARK MODE TOGGLE ===== */
+  darkToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 
     if (document.body.classList.contains("dark")) {
@@ -21,9 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  /* Load saved theme */
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-    darkToggle.textContent = "☀️";
-  }
+  /* ===== MOBILE MENU ===== */
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 
+});
