@@ -5,10 +5,10 @@
 const darkToggle = document.getElementById("darkToggle");
 
 darkToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("dark");   // ✅ CHANGE HERE
 
   // Change icon
-  if (document.body.classList.contains("dark-mode")) {
+  if (document.body.classList.contains("dark")) {   // ✅ CHANGE HERE
     darkToggle.textContent = "☀️";
     localStorage.setItem("theme", "dark");
   } else {
@@ -21,7 +21,7 @@ darkToggle.addEventListener("click", () => {
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
-    document.body.classList.add("dark-mode");
+    document.body.classList.add("dark");   // ✅ CHANGE HERE
     darkToggle.textContent = "☀️";
   }
 });
@@ -40,7 +40,7 @@ searchInput.addEventListener("keyup", () => {
   );
 
   searchableElements.forEach(el => {
-    if (el.textContent.toLowerCase().includes(query)) {
+    if (el.textContent.toLowerCase().includes(query) && query !== "") {
       el.style.backgroundColor = "rgba(255, 255, 0, 0.3)";
     } else {
       el.style.backgroundColor = "transparent";
