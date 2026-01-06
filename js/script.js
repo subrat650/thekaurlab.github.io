@@ -32,15 +32,3 @@ document.addEventListener("DOMContentLoaded", () => {
     darkToggle.textContent = "☀️";
   }
 
-  /* ===== SEARCH ===== */
-  searchInput?.addEventListener("keyup", () => {
-    const query = searchInput.value.toLowerCase();
-    document.querySelectorAll("h1, h2, h3, p, li").forEach(el => {
-      el.style.backgroundColor =
-        query && el.textContent.toLowerCase().includes(query)
-          ? "rgba(255,255,0,0.3)"
-          : "transparent";
-    });
-  });
-
-});
