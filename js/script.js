@@ -37,3 +37,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+/* PSII hover animation */
+
+const psiiBox = document.getElementById("psiiBox");
+
+if (psiiBox) {
+  psiiBox.addEventListener("mouseenter", () => {
+    psiiBox.classList.add("active");
+  });
+
+  psiiBox.addEventListener("mouseleave", () => {
+    psiiBox.classList.remove("active");
+  });
+}
+
+
