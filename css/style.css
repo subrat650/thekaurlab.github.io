@@ -239,3 +239,31 @@ footer {
     grid-template-columns: 1fr;
     text-align: center;
   }
+/* =================================================
+   PAGE-SPECIFIC HERO BACKGROUNDS (NON-HOME)
+================================================= */
+
+/* Research page hero */
+.page-research .hero {
+  background: url("../images/research-hero.jpg") center/cover no-repeat;
+}
+
+/* People page hero */
+.page-people .hero {
+  background: url("../images/people-hero.jpg") center/cover no-repeat;
+}
+
+/* Publications page hero */
+.page-publications .hero {
+  background: url("../images/publications-hero.jpg") center/cover no-repeat;
+}
+
+/* News page hero */
+.page-news .hero {
+  background: url("../images/news-hero.jpg") center/cover no-repeat;
+}
+
+/* Contact page hero */
+.page-contact .hero {
+  background: url("../images/contact-hero.jpg") center/cover no-repeat;
+}
