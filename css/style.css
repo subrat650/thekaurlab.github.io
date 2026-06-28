@@ -269,3 +269,26 @@ footer {
 .page-contact .hero {
   background: url("../images/contact-hero.jpg") center/cover no-repeat;
 }
+/* ===========================
+PAGE HERO IMAGES
+=========================== */
+
+.page-research .hero{
+    background-image:url("../images/research-hero.jpg");
+}
+
+.page-people .hero{
+    background-image:url("../images/people-hero.jpg");
+}
+
+.page-publications .hero{
+    background-image:url("../images/publications-hero.jpg");
+}
+
+.page-news .hero{
+    background-image:url("../images/news-hero.jpg");
+}
+
+.page-contact .hero{
+    background-image:url("../images/contact-hero.jpg");
+}
