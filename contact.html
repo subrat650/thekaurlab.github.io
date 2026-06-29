@@ -1,74 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Kaur Computational Lab</title>
-  <link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Kaur Computational Lab</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<style>
+
+
+/* Contact page only */
+
+
+.contact-header{
+
+max-width:900px;
+
+margin:0 auto 60px;
+
+}
+
+
+
+.contact-header h2{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+
+
+.contact-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:35px;
+
+margin-top:50px;
+
+}
+
+
+
+
+
+.contact-card{
+
+
+background:var(--card-bg);
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+border-left:6px solid var(--primary);
+
+transition:.35s;
+
+text-align:left;
+
+
+}
+
+
+
+
+
+.contact-card:hover{
+
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 50px var(--shadow);
+
+
+}
+
+
+
+
+
+.contact-title{
+
+
+font-size:25px;
+
+font-weight:700;
+
+color:var(--primary);
+
+margin-bottom:18px;
+
+
+}
+
+
+
+
+
+.contact-text{
+
+
+font-size:17px;
+
+line-height:1.7;
+
+
+}
+
+
+
+
+
+.contact-email{
+
+
+color:var(--primary);
+
+font-weight:600;
+
+}
+
+
+
+
+</style>
+
+
 </head>
+
+
+
 
 <body class="page-contact">
 
+
+
 <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">Kaur Computational Lab</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="nav-controls">
-      <button id="darkToggle" class="dark-btn">🌙</button>
-    </div>
-  </div>
+
+
+<div class="nav-container">
+
+
+<div class="logo">
+
+Kaur Computational Lab
+
+</div>
+
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="people.html">People</a></li>
+
+<li><a href="publications.html">Publications</a></li>
+
+<li><a href="news.html">News</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+
+<div class="nav-controls">
+
+<button id="darkToggle" class="dark-btn">
+
+🌙
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
 </nav>
 
+
+
+
+
+
+
 <header class="hero small-hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-text">
-    <h1>Contact</h1>
-    <p>Get in touch with us</p>
-  </div>
+
+
+<div class="hero-overlay"></div>
+
+
+<div class="hero-text">
+
+
+<h1>Contact</h1>
+
+
+<p>
+
+Get in touch with the Kaur Computational Lab
+
+</p>
+
+
+</div>
+
+
 </header>
 
+
+
+
+
+
+
 <section class="section">
-  <div class="card-container">
 
-    <div class="card">
-      <h3>Principal Investigator</h3>
-      <p>
-        <strong>Dr. Divya Kaur Matta</strong><br>
-        Department of Chemistry<br>
-        Brock University<br>
-        Canada
-      </p>
-    </div>
 
-    <div class="card">
-      <h3>Email</h3>
-      <p>(Official email will be added here)</p>
-    </div>
 
-    <div class="card">
-      <h3>Opportunities</h3>
-      <p>
-        Prospective students interested in molecular dynamics,
-        computational biophysics, or photosynthesis research are encouraged
-        to contact us.
-      </p>
-    </div>
+<div class="contact-header">
 
-  </div>
+
+<h2>
+
+Contact Information
+
+</h2>
+
+
+<p class="section-text">
+
+
+For research collaborations, graduate opportunities,
+and computational biophysics projects, please contact our lab.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="contact-list">
+
+
+
+
+
+<!-- PI -->
+
+<div class="contact-card">
+
+
+<div class="contact-title">
+
+Principal Investigator
+
+</div>
+
+
+<div class="contact-text">
+
+
+<strong>
+
+Prof. Divya Kaur Matta
+
+</strong>
+
+<br>
+
+Department of Chemistry
+
+<br>
+
+Brock University
+
+<br>
+
+Canada
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Email -->
+
+
+<div class="contact-card">
+
+
+<div class="contact-title">
+
+Email
+
+</div>
+
+
+<div class="contact-text">
+
+
+Official email:
+
+<br>
+
+
+<span class="contact-email">
+
+(To be added)
+
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Opportunities -->
+
+
+<div class="contact-card">
+
+
+<div class="contact-title">
+
+Opportunities
+
+</div>
+
+
+<div class="contact-text">
+
+
+Prospective graduate students interested in
+
+molecular dynamics, computational biophysics,
+
+quantum chemistry, and photosynthesis research
+
+are encouraged to contact the lab.
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
 </section>
 
+
+
+
+
+
+
 <footer>
-  © Kaur Computational Lab
+
+
+© 2026 Kaur Computational Lab • Brock University
+
+
 </footer>
 
-<!-- JS (ONLY HERE) -->
+
+
+
+
 <script src="js/script.js"></script>
 
+
 </body>
+
 </html>
