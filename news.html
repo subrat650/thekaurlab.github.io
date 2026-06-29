@@ -1,135 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News | Kaur Computational Lab</title>
 
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
+<title>News | Kaur Computational Lab</title>
 
-/* NEWS PAGE STYLING (matched with People page) */
+<link rel="stylesheet" href="css/style.css">
 
-.card-container{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:35px;
-  max-width:1100px;
-  margin:0 auto;
+
+<style>
+
+
+/* News page only */
+
+
+.news-header{
+
+max-width:900px;
+
+margin:0 auto 60px;
+
 }
 
-.card{
-  background:var(--card-bg);
-  padding:30px;
-  border-radius:18px;
-  box-shadow:0 15px 40px rgba(0,0,0,.08);
-  border-bottom:5px solid var(--primary);
-  transition:.35s;
+
+
+.news-header h2{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+color:var(--primary);
+
 }
 
-.card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 20px 50px var(--shadow);
+
+
+
+.news-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:35px;
+
+margin-top:50px;
+
 }
 
-.card h3{
-  font-size:20px;
-  color:var(--primary);
-  margin-bottom:10px;
+
+
+
+.news-card{
+
+
+background:var(--card-bg);
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+border-left:6px solid var(--primary);
+
+transition:.35s;
+
+text-align:left;
+
+
 }
 
-.card p{
-  font-size:16px;
-  line-height:1.6;
-  color:var(--secondary);
+
+
+
+.news-card:hover{
+
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 50px var(--shadow);
+
+
 }
 
-/* Page title alignment */
-.hero-text h1{
-  font-size:42px;
+
+
+
+
+.news-date{
+
+
+font-size:25px;
+
+font-weight:700;
+
+color:var(--primary);
+
+margin-bottom:18px;
+
+
 }
 
-.hero-text p{
-  font-size:18px;
+
+
+
+
+.news-text{
+
+
+font-size:17px;
+
+line-height:1.7;
+
+margin-bottom:15px;
+
+
 }
 
-@media(max-width:700px){
-  .card-container{
-    grid-template-columns:1fr;
-  }
+
+
+
+.news-tag{
+
+
+display:inline-block;
+
+padding:7px 14px;
+
+margin-top:15px;
+
+border-radius:25px;
+
+background:rgba(20,184,166,.12);
+
+border:1px solid rgba(20,184,166,.2);
+
+color:var(--primary);
+
+font-size:14px;
+
+font-weight:600;
+
+
 }
 
-  </style>
+
+
+</style>
+
 
 </head>
 
+
+
 <body class="page-news">
 
+
+
 <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">Kaur Computational Lab</div>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+<div class="nav-container">
 
-    <button id="darkToggle" class="dark-btn">🌙</button>
-  </div>
+
+<div class="logo">
+
+Kaur Computational Lab
+
+</div>
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="people.html">People</a></li>
+
+<li><a href="publications.html">Publications</a></li>
+
+<li><a href="news.html">News</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+<div class="nav-controls">
+
+<button id="darkToggle" class="dark-btn">
+
+🌙
+
+</button>
+
+</div>
+
+
+</div>
+
 </nav>
 
+
+
+
+
 <header class="hero small-hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-text">
-    <h1>News</h1>
-    <p>Latest updates from the Kaur Lab</p>
-  </div>
+
+<div class="hero-overlay"></div>
+
+
+<div class="hero-text">
+
+<h1>News</h1>
+
+<p>
+Latest updates from the Kaur Computational Lab
+</p>
+
+
+</div>
+
+
 </header>
+
+
+
+
+
 
 <section class="section">
 
-  <div class="card-container">
 
-    <div class="card">
-      <h3>September 2025</h3>
-      <p>
-        Our lab welcomes new graduate and undergraduate students
-        joining the Kaur Lab for the Fall term.
-      </p>
-    </div>
+<div class="news-header">
 
-    <div class="card">
-      <h3>August 2025</h3>
-      <p>
-        Ongoing research projects on photosynthetic systems and
-        interfacial water dynamics continue using advanced molecular
-        simulations.
-      </p>
-    </div>
 
-    <div class="card">
-      <h3>July 2025</h3>
-      <p>
-        Members of the lab participated in computational chemistry
-        workshops and seminars focused on molecular dynamics and
-        multiscale modeling.
-      </p>
-    </div>
+<h2>
 
-  </div>
+Latest Updates
+
+</h2>
+
+
+<p class="section-text">
+
+
+Stay updated with recent activities,
+research milestones, publications,
+and achievements from the Kaur Computational Lab.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="news-list">
+
+
+
+
+
+<!-- News 1 -->
+
+
+<div class="news-card">
+
+
+<div class="news-date">
+
+September 2025
+
+</div>
+
+
+<div class="news-text">
+
+The Kaur Computational Lab welcomes new graduate and undergraduate students joining the group for the Fall 2025 term. New members will contribute to ongoing projects in computational biophysics and molecular simulation.
+
+</div>
+
+
+<span class="news-tag">
+
+Lab Update
+
+</span>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- News 2 -->
+
+
+<div class="news-card">
+
+
+<div class="news-date">
+
+August 2025
+
+</div>
+
+
+<div class="news-text">
+
+Research activities continue on photosynthetic systems, interfacial water dynamics, and molecular mechanisms of biological energy conversion using advanced computational approaches.
+
+</div>
+
+
+<span class="news-tag">
+
+Research
+
+</span>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- News 3 -->
+
+
+<div class="news-card">
+
+
+<div class="news-date">
+
+July 2025
+
+</div>
+
+
+<div class="news-text">
+
+Lab members participated in computational chemistry workshops and scientific discussions focused on molecular dynamics simulations, quantum chemistry, and multiscale modelling.
+
+</div>
+
+
+<span class="news-tag">
+
+Workshop
+
+</span>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
 
 </section>
 
+
+
+
+
+
 <footer>
-  © 2026 Kaur Computational Lab • Brock University
+
+
+© 2026 Kaur Computational Lab • Brock University
+
+
 </footer>
+
+
 
 <script src="js/script.js"></script>
 
+
 </body>
+
 </html>
