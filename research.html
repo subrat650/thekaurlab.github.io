@@ -1,81 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Research | Kaur Computational Lab</title>
-  <link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Research | Kaur Computational Lab</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<style>
+
+/* Research page only */
+
+
+.research-header{
+
+max-width:900px;
+
+margin:0 auto 60px;
+
+}
+
+
+.research-header h2{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+
+
+.research-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:35px;
+
+margin-top:50px;
+
+}
+
+
+
+.research-card{
+
+background:var(--card-bg);
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+border-left:6px solid var(--primary);
+
+transition:.35s;
+
+text-align:left;
+
+}
+
+
+
+.research-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 50px var(--shadow);
+
+}
+
+
+
+.research-title{
+
+font-size:28px;
+
+font-weight:700;
+
+color:var(--primary);
+
+margin-bottom:18px;
+
+}
+
+
+
+.research-text{
+
+font-size:17px;
+
+line-height:1.7;
+
+}
+
+
+
+.research-tags{
+
+margin-top:25px;
+
+}
+
+
+
+.research-tag{
+
+display:inline-block;
+
+padding:7px 14px;
+
+margin:4px;
+
+border-radius:25px;
+
+background:rgba(20,184,166,.12);
+
+border:1px solid rgba(20,184,166,.2);
+
+color:var(--primary);
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+
+</style>
+
 </head>
+
+
+
 <body class="page-research">
 
+
+
 <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">Kaur Computational Lab</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="nav-controls">
-      <button id="darkToggle" class="dark-btn">🌙</button>
-    </div>
-    
-  </div>
+
+<div class="nav-container">
+
+
+<div class="logo">
+
+Kaur Computational Lab
+
+</div>
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="people.html">People</a></li>
+
+<li><a href="publications.html">Publications</a></li>
+
+<li><a href="news.html">News</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+<div class="nav-controls">
+
+<button id="darkToggle" class="dark-btn">🌙</button>
+
+</div>
+
+
+</div>
+
 </nav>
 
+
+
+
 <header class="hero small-hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-text">
-    <h1>Research</h1>
-    <p>Scientific themes and ongoing projects</p>
-  </div>
+
+<div class="hero-overlay"></div>
+
+
+<div class="hero-text">
+
+<h1>Research</h1>
+
+<p>
+Computational approaches to understand biological systems at molecular resolution
+</p>
+
+</div>
+
 </header>
 
+
+
+
+
 <section class="section">
-  <div class="card-container">
 
-    <div class="card">
-      <h3>Photosynthetic Systems</h3>
-      <p>
-        Computational investigation of Photosystem I and II, including
-        pigment–protein interactions, energy transfer, and redox processes.
-      </p>
-    </div>
 
-    <div class="card">
-      <h3>Molecular Dynamics Simulations</h3>
-      <p>
-        Classical MD simulations of biomolecular systems to understand 
-        conformational dynamics.
-      </p>
-    </div>
+<div class="research-header">
 
-    <div class="card">
-      <h3>QM/MM & Electronic Structure</h3>
-      <p>
-        Hybrid QM/MM calculations to study electronic properties, charge
-        transfer, and reaction mechanisms in complex biomolecules.
-      </p>
-    </div>
 
-    <div class="card">
-      <h3>Multiscale Modeling</h3>
-      <p>
-        Bridging atomistic and coarse-grained approaches to capture biological
-        processes across length and time scales.
-      </p>
-    </div>
+<h2>
 
-  </div>
+Research Areas
+
+</h2>
+
+
+<p class="section-text">
+
+
+The Kaur Computational Lab uses molecular simulations,
+quantum chemistry, and multiscale computational approaches
+to investigate biological mechanisms at the atomic level.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="research-list">
+
+
+
+
+
+<div class="research-card">
+
+
+<div class="research-title">
+
+Computational Biophysics
+
+</div>
+
+
+<div class="research-text">
+
+
+We investigate structure, dynamics, and molecular interactions
+in biological systems using computational approaches to reveal
+the physical principles governing biomolecular function.
+
+
+</div>
+
+
+<div class="research-tags">
+
+<span class="research-tag">
+Molecular Modeling
+</span>
+
+
+<span class="research-tag">
+Biomolecular Dynamics
+</span>
+
+
+<span class="research-tag">
+Simulation
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="research-card">
+
+
+<div class="research-title">
+
+Molecular Dynamics Simulations
+
+</div>
+
+
+<div class="research-text">
+
+
+Classical molecular dynamics simulations are employed to study
+protein flexibility, conformational changes, hydration behaviour,
+and molecular interactions across biologically relevant time scales.
+
+
+</div>
+
+
+
+<div class="research-tags">
+
+
+<span class="research-tag">
+AMBER
+</span>
+
+
+<span class="research-tag">
+GROMACS
+</span>
+
+
+<span class="research-tag">
+Protein Dynamics
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="research-card">
+
+
+<div class="research-title">
+
+Interfacial Water and Hydration Dynamics
+
+</div>
+
+
+<div class="research-text">
+
+
+We study the structural and dynamical properties of water molecules
+near biomolecular interfaces, including hydrogen bonding networks,
+water exchange, and the role of hydration in biological function.
+
+
+</div>
+
+
+
+<div class="research-tags">
+
+
+<span class="research-tag">
+Hydrogen Bonding
+</span>
+
+
+<span class="research-tag">
+Water Dynamics
+</span>
+
+
+<span class="research-tag">
+Biological Interfaces
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="research-card">
+
+
+<div class="research-title">
+
+QM/MM and Electronic Structure
+
+</div>
+
+
+<div class="research-text">
+
+
+Hybrid quantum mechanics/molecular mechanics methods are used
+to explore electronic properties, charge transfer mechanisms,
+redox reactions, and catalytic processes in complex biomolecules.
+
+
+</div>
+
+
+
+<div class="research-tags">
+
+
+<span class="research-tag">
+QM/MM
+</span>
+
+
+<span class="research-tag">
+Quantum Chemistry
+</span>
+
+
+<span class="research-tag">
+Electronic Structure
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="research-card">
+
+
+<div class="research-title">
+
+Photosynthetic Systems
+
+</div>
+
+
+<div class="research-text">
+
+
+Computational studies of photosynthetic complexes including
+Photosystem I and II, focusing on pigment–protein interactions,
+energy transfer pathways, and electron transfer processes.
+
+
+</div>
+
+
+
+<div class="research-tags">
+
+
+<span class="research-tag">
+Photosystem I
+</span>
+
+
+<span class="research-tag">
+Iron–Sulfur Clusters
+</span>
+
+
+<span class="research-tag">
+Energy Conversion
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="research-card">
+
+
+<div class="research-title">
+
+Multiscale Modeling
+
+</div>
+
+
+<div class="research-text">
+
+
+Combining atomistic simulations and higher-scale approaches
+to connect molecular interactions with large biological processes.
+
+
+</div>
+
+
+
+<div class="research-tags">
+
+
+<span class="research-tag">
+Multiscale Simulation
+</span>
+
+
+<span class="research-tag">
+Coarse Graining
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
 </section>
 
+
+
+
+
 <footer>
-  © Kaur Computational Lab
+
+
+© 2026 Kaur Computational Lab • Brock University
+
+
 </footer>
-  
-<!-- JS -->
+
+
+
+
 <script src="js/script.js"></script>
+
+
 </body>
+
 </html>
