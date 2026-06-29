@@ -1,85 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaur Computational Lab</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Kaur Computational Lab</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+
+/* HOME PAGE ONLY */
+
+
+.home-header{
+
+max-width:900px;
+
+margin:0 auto 50px;
+
+}
+
+
+
+.home-header h2{
+
+font-size:42px;
+
+color:var(--primary);
+
+margin-bottom:15px;
+
+}
+
+
+
+
+.home-text{
+
+font-size:17px;
+
+line-height:1.8;
+
+}
+
+
+
+
+
+.home-card-container{
+
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+
+}
+
+
+
+
+
+.home-card{
+
+
+background:var(--card-bg);
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+border-bottom:5px solid var(--primary);
+
+transition:.35s;
+
+
+}
+
+
+
+
+
+.home-card:hover{
+
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 50px var(--shadow);
+
+
+}
+
+
+
+
+
+.home-card h3{
+
+
+font-size:24px;
+
+color:var(--primary);
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.home-card p{
+
+
+font-size:16px;
+
+line-height:1.7;
+
+
+}
+
+
+
+
+
+</style>
+
+
 </head>
+
+
+
 
 <body>
 
+
+
 <!-- NAVBAR -->
+
+
 <nav class="navbar">
-  <div class="nav-container">
 
-    <div class="logo">Kaur Computational Lab</div>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+<div class="nav-container">
 
-    <div class="nav-controls">
-      <button id="darkToggle" class="dark-btn">🌙</button>
-    </div>
 
-  </div>
+<div class="logo">
+
+Kaur Computational Lab
+
+</div>
+
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="people.html">People</a></li>
+
+<li><a href="publications.html">Publications</a></li>
+
+<li><a href="news.html">News</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+
+<div class="nav-controls">
+
+
+<button id="darkToggle" class="dark-btn">
+
+🌙
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
 </nav>
 
+
+
+
+
+
+
+
 <!-- HERO -->
+
+
 <header class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-text">
-    <h1>The Kaur Lab</h1>
-    <p>Computational Biophysics & Photosynthesis Research</p>
-  </div>
+
+
+<div class="hero-overlay"></div>
+
+
+<div class="hero-text">
+
+
+<h1>
+
+The Kaur Lab
+
+</h1>
+
+
+<p>
+
+Computational Biophysics & Photosynthesis Research
+
+</p>
+
+
+</div>
+
+
 </header>
 
+
+
+
+
+
+
+
 <!-- ABOUT -->
+
+
 <section class="section">
-  <h2>About Us</h2>
-  <p class="section-text">
-    The Kaur Lab focuses on understanding the structure, dynamics, and function
-    of biological systems using molecular dynamics simulations, quantum chemistry,
-    and multiscale modeling. Our research emphasizes photosynthetic complexes,
-    interfacial water, and energy conversion processes.
-  </p>
+
+
+<div class="home-header">
+
+
+<h2>
+
+About Us
+
+</h2>
+
+
+<p class="home-text">
+
+
+The Kaur Computational Lab focuses on understanding
+the structure, dynamics, and function of biological systems
+using molecular dynamics simulations, quantum chemistry,
+and multiscale modelling approaches.
+
+
+Our research explores photosynthetic complexes,
+interfacial water dynamics, and molecular mechanisms
+in biological energy conversion.
+
+
+</p>
+
+
+</div>
+
+
 </section>
+
+
+
+
+
+
+
 
 <!-- RESEARCH -->
+
+
 <section class="section light">
-  <h2>Our Research</h2>
 
-  <div class="card-container">
-    <div class="card">
-      <h3>Photosynthetic Complexes</h3>
-      <p>Structure–function relationships in Photosystem I & II.</p>
-    </div>
 
-    <div class="card">
-      <h3>Molecular Dynamics</h3>
-      <p>Protein, water, and membrane dynamics using MD simulations.</p>
-    </div>
+<div class="home-header">
 
-    <div class="card">
-      <h3>QM/MM & Multiscale Modeling</h3>
-      <p>Electronic structure and energy transfer mechanisms.</p>
-    </div>
-  </div>
+
+<h2>
+
+Our Research
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="home-card-container">
+
+
+
+
+
+<div class="home-card">
+
+
+<h3>
+
+Photosynthetic Complexes
+
+</h3>
+
+
+<p>
+
+
+Investigating structure–function relationships
+in Photosystem I and Photosystem II systems
+using computational approaches.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="home-card">
+
+
+<h3>
+
+Molecular Dynamics
+
+</h3>
+
+
+<p>
+
+
+Studying protein, water, and membrane dynamics
+through atomistic molecular dynamics simulations.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="home-card">
+
+
+<h3>
+
+QM/MM & Multiscale Modeling
+
+</h3>
+
+
+<p>
+
+
+Exploring electronic structures,
+energy transfer mechanisms,
+and catalytic processes using multiscale methods.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
 </section>
 
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
 <footer>
-  © Kaur Computational Lab
+
+
+© 2026 Kaur Computational Lab • Brock University
+
+
 </footer>
 
-<!-- JS -->
+
+
+
+
+
 <script src="js/script.js"></script>
+
+
 </body>
+
 </html>
