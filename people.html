@@ -36,27 +36,40 @@ border-left:6px solid var(--primary);
 
 
 
-/* PI IMAGE FIX */
+/* PI IMAGE - NO CROP */
 
 .pi-image{
 
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
+width:220px;
+
+height:220px;
+
+border-radius:20px;
+
+overflow:hidden;
 
 }
 
 
 .pi-image img{
 
-width:220px;
-height:220px;
+width:100%;
 
-object-fit:cover;
+height:100%;
+
+object-fit:contain;
 
 border-radius:20px;
 
 }
+
+
 
 
 
@@ -122,13 +135,16 @@ color:var(--primary);
 
 
 
+
 .people-grid{
+
 
 display:grid;
 
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
 gap:35px;
+
 
 }
 
@@ -163,18 +179,25 @@ border-bottom:5px solid var(--primary);
 
 .person-card:hover{
 
+
 transform:translateY(-10px);
 
 box-shadow:0 20px 50px var(--shadow);
+
 
 }
 
 
 
 
-/* MEMBER IMAGE FIX */
+
+
+
+/* STUDENT IMAGE */
+
 
 .person-img{
+
 
 width:150px;
 
@@ -186,11 +209,13 @@ overflow:hidden;
 
 border-radius:20px;
 
+
 }
 
 
 
 .person-img img{
+
 
 width:100%;
 
@@ -200,12 +225,17 @@ object-fit:cover;
 
 border-radius:20px;
 
+
 }
 
 
 
 
+
+
+
 .person-card h3{
+
 
 margin-top:20px;
 
@@ -213,11 +243,14 @@ font-size:22px;
 
 color:var(--primary);
 
+
 }
 
 
 
+
 .person-card p{
+
 
 font-size:16px;
 
@@ -225,7 +258,10 @@ color:var(--secondary);
 
 font-weight:600;
 
+
 }
+
+
 
 
 
@@ -240,19 +276,25 @@ opacity:.9;
 
 
 
+
+
 @media(max-width:700px){
 
 
 .pi-card{
 
+
 flex-direction:column;
 
 text-align:center;
 
+
 }
 
 
 }
+
+
 
 </style>
 
@@ -263,7 +305,10 @@ text-align:center;
 
 
 
+
 <body class="page-people">
+
+
 
 
 
@@ -280,7 +325,9 @@ Kaur Computational Lab
 
 
 
+
 <ul class="nav-links">
+
 
 <li><a href="index.html">Home</a></li>
 
@@ -299,6 +346,7 @@ Kaur Computational Lab
 
 
 
+
 <button id="darkToggle" class="dark-btn">
 
 🌙
@@ -306,9 +354,12 @@ Kaur Computational Lab
 </button>
 
 
+
 </div>
 
 </nav>
+
+
 
 
 
@@ -344,10 +395,13 @@ People behind the research
 
 
 
+
 <section class="section">
 
 
+
 <div class="pi-card">
+
 
 
 <div class="pi-image">
@@ -360,12 +414,17 @@ People behind the research
 
 
 
+
+
 <div class="pi-content">
 
 
 <h3>
+
 Prof. Divya Kaur Matta
+
 </h3>
+
 
 
 <p class="pi-title">
@@ -376,6 +435,7 @@ Assistant Professor, Chemistry
 
 
 
+
 <p>
 
 The Kaur Computational Lab investigates biological systems
@@ -383,6 +443,7 @@ using computational biophysics, molecular simulations,
 quantum chemistry, and multiscale modelling approaches.
 
 </p>
+
 
 
 </div>
@@ -408,9 +469,13 @@ quantum chemistry, and multiscale modelling approaches.
 
 <div class="people-title">
 
+
 <h2>
+
 Current Members
+
 </h2>
+
 
 </div>
 
@@ -418,8 +483,9 @@ Current Members
 
 
 
-<div class="people-grid">
 
+
+<div class="people-grid">
 
 
 
@@ -435,12 +501,16 @@ Current Members
 
 
 <h3>
+
 Subrat Kumar Sethy
+
 </h3>
 
 
 <p>
+
 PhD Student
+
 </p>
 
 
@@ -462,12 +532,16 @@ PhD Student
 
 
 <h3>
+
 Jimit Patel
+
 </h3>
 
 
 <p>
+
 Graduate Student
+
 </p>
 
 
@@ -479,26 +553,39 @@ Graduate Student
 
 
 
+
 <div class="person-card">
 
+
 <div class="person-img">
+
 
 <img src="images/Siya.jpeg">
 
+
 </div>
+
 
 
 <h3>
+
 Siya Hariprasad
+
 </h3>
 
 
+
 <p>
+
 Undergraduate Student
+
 </p>
 
 
+
 </div>
+
+
 
 
 
@@ -508,24 +595,35 @@ Undergraduate Student
 
 <div class="person-card">
 
+
 <div class="person-img">
+
 
 <img src="images/Yashi.jpeg">
 
+
 </div>
+
 
 
 <h3>
+
 Yashi Gajjar
+
 </h3>
 
 
+
 <p>
+
 Undergraduate Student
+
 </p>
 
 
+
 </div>
+
 
 
 
@@ -535,24 +633,37 @@ Undergraduate Student
 
 <div class="person-card">
 
+
 <div class="person-img">
+
 
 <img src="images/Khushi.jpeg">
 
+
 </div>
+
 
 
 <h3>
+
 Khushi Soni
+
 </h3>
 
 
+
 <p>
+
 Undergraduate Student
+
 </p>
 
 
+
 </div>
+
+
+
 
 
 
@@ -561,22 +672,33 @@ Undergraduate Student
 
 <div class="person-card">
 
+
 <div class="person-img">
 
+
 </div>
+
 
 
 <h3>
+
 Salwa
+
 </h3>
 
 
+
 <p>
+
 Undergraduate Student
+
 </p>
 
 
+
 </div>
+
+
 
 
 
@@ -586,6 +708,7 @@ Undergraduate Student
 
 
 </section>
+
 
 
 
@@ -601,11 +724,14 @@ Undergraduate Student
 
 
 <h2>
+
 Alumni
+
 </h2>
 
 
 </div>
+
 
 
 
@@ -619,20 +745,27 @@ Alumni
 
 <div class="person-img">
 
+
 </div>
 
 
 <h3>
+
 Name Here
+
 </h3>
 
 
 <p>
+
 Former Member
+
 </p>
 
 
+
 </div>
+
 
 
 
@@ -640,6 +773,7 @@ Former Member
 
 
 </section>
+
 
 
 
