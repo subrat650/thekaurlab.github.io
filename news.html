@@ -2,14 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News | Kaur Computational Lab</title>
+
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+/* NEWS PAGE STYLING (matched with People page) */
+
+.card-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.card{
+  background:var(--card-bg);
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+  border-bottom:5px solid var(--primary);
+  transition:.35s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 50px var(--shadow);
+}
+
+.card h3{
+  font-size:20px;
+  color:var(--primary);
+  margin-bottom:10px;
+}
+
+.card p{
+  font-size:16px;
+  line-height:1.6;
+  color:var(--secondary);
+}
+
+/* Page title alignment */
+.hero-text h1{
+  font-size:42px;
+}
+
+.hero-text p{
+  font-size:18px;
+}
+
+@media(max-width:700px){
+  .card-container{
+    grid-template-columns:1fr;
+  }
+}
+
+  </style>
+
 </head>
+
 <body class="page-news">
 
 <nav class="navbar">
   <div class="nav-container">
     <div class="logo">Kaur Computational Lab</div>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
@@ -18,9 +78,8 @@
       <li><a href="news.html">News</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="nav-controls">
-      <button id="darkToggle" class="dark-btn">🌙</button>
-    </div>
+
+    <button id="darkToggle" class="dark-btn">🌙</button>
   </div>
 </nav>
 
@@ -33,6 +92,7 @@
 </header>
 
 <section class="section">
+
   <div class="card-container">
 
     <div class="card">
@@ -62,12 +122,13 @@
     </div>
 
   </div>
+
 </section>
 
 <footer>
-  © Kaur Computational Lab
+  © 2026 Kaur Computational Lab • Brock University
 </footer>
-<!-- JS -->
+
 <script src="js/script.js"></script>
 
 </body>
