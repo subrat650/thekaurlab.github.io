@@ -13,16 +13,13 @@
 
 <style>
 
-
 /* People page only */
 
 
 .pi-card{
 
 display:flex;
-
 align-items:center;
-
 gap:45px;
 
 background:var(--card-bg);
@@ -39,18 +36,31 @@ border-left:6px solid var(--primary);
 
 
 
+/* PI IMAGE FIX */
+
+.pi-image{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+
 .pi-image img{
 
 width:220px;
-
 height:220px;
 
 object-fit:cover;
 
-border-radius:50%;
+border-radius:20px;
 
 }
 
+
+
+/* PI TEXT */
 
 
 .pi-content h3{
@@ -114,15 +124,15 @@ color:var(--primary);
 
 .people-grid{
 
-
 display:grid;
 
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
 gap:35px;
 
-
 }
+
+
 
 
 
@@ -150,6 +160,7 @@ border-bottom:5px solid var(--primary);
 
 
 
+
 .person-card:hover{
 
 transform:translateY(-10px);
@@ -160,9 +171,10 @@ box-shadow:0 20px 50px var(--shadow);
 
 
 
-.person-img img,
-.person-img{
 
+/* MEMBER IMAGE FIX */
+
+.person-img{
 
 width:150px;
 
@@ -170,9 +182,9 @@ height:150px;
 
 margin:auto;
 
-border-radius:50%;
-
 overflow:hidden;
+
+border-radius:20px;
 
 }
 
@@ -180,9 +192,16 @@ overflow:hidden;
 
 .person-img img{
 
+width:100%;
+
+height:100%;
+
 object-fit:cover;
 
+border-radius:20px;
+
 }
+
 
 
 
@@ -211,12 +230,12 @@ font-weight:600;
 
 
 
-
 .alumni{
 
 opacity:.9;
 
 }
+
 
 
 
@@ -235,8 +254,6 @@ text-align:center;
 
 }
 
-
-
 </style>
 
 
@@ -245,9 +262,8 @@ text-align:center;
 
 
 
+
 <body class="page-people">
-
-
 
 
 
@@ -293,6 +309,8 @@ Kaur Computational Lab
 </div>
 
 </nav>
+
+
 
 
 
@@ -399,7 +417,9 @@ Current Members
 
 
 
+
 <div class="people-grid">
+
 
 
 
@@ -430,6 +450,8 @@ PhD Student
 
 
 
+
+
 <div class="person-card">
 
 <div class="person-img">
@@ -455,6 +477,8 @@ Graduate Student
 
 
 
+
+
 <div class="person-card">
 
 <div class="person-img">
@@ -475,6 +499,7 @@ Undergraduate Student
 
 
 </div>
+
 
 
 
@@ -507,6 +532,7 @@ Undergraduate Student
 
 
 
+
 <div class="person-card">
 
 <div class="person-img">
@@ -533,9 +559,7 @@ Undergraduate Student
 
 
 
-
 <div class="person-card">
-
 
 <div class="person-img">
 
@@ -558,12 +582,10 @@ Undergraduate Student
 
 
 
-
 </div>
 
 
 </section>
-
 
 
 
@@ -584,6 +606,7 @@ Alumni
 
 
 </div>
+
 
 
 
@@ -625,7 +648,6 @@ Former Member
 
 
 
-
 <footer>
 
 
@@ -633,6 +655,7 @@ Former Member
 
 
 </footer>
+
 
 
 
