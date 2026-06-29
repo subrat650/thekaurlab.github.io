@@ -1,76 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Publications | Kaur Computational Lab</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications | Kaur Computational Lab</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* Publication page only */
+
+.pub-header{
+    max-width:900px;
+    margin:0 auto 60px;
+}
+
+.pub-header h2{
+    font-size:42px;
+    margin-bottom:10px;
+    color:var(--primary);
+}
+
+.pub-list{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    margin-top:50px;
+}
+
+.pub-card{
+
+background:var(--card-bg);
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+border-left:6px solid var(--primary);
+
+transition:.35s;
+
+text-align:left;
+
+}
+
+.pub-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 50px var(--shadow);
+
+}
+
+.pub-title{
+
+font-size:25px;
+
+font-weight:700;
+
+color:var(--primary);
+
+margin-bottom:18px;
+
+line-height:1.4;
+
+}
+
+.pub-authors{
+
+font-size:17px;
+
+margin-bottom:12px;
+
+}
+
+.pub-journal{
+
+font-style:italic;
+
+font-size:18px;
+
+color:var(--secondary);
+
+margin-bottom:20px;
+
+}
+
+.pub-tags{
+
+margin-top:20px;
+
+}
+
+.pub-tag{
+
+display:inline-block;
+
+padding:7px 14px;
+
+margin:4px;
+
+border-radius:25px;
+
+background:rgba(20,184,166,.12);
+
+border:1px solid rgba(20,184,166,.2);
+
+color:var(--primary);
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+.scholar-btn{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:14px 34px;
+
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.scholar-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 12px 30px var(--shadow);
+
+}
+
+</style>
+
 </head>
+
 <body class="page-publications">
 
 <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">Kaur Computational Lab</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-     <div class="nav-controls">
-      <button id="darkToggle" class="dark-btn">🌙</button>
-    </div>
-    
-  </div>
+<div class="nav-container">
+
+<div class="logo">Kaur Computational Lab</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="people.html">People</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-controls">
+<button id="darkToggle" class="dark-btn">🌙</button>
+</div>
+
+</div>
 </nav>
 
 <header class="hero small-hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-text">
-    <h1>Publications</h1>
-    <p>Peer-reviewed research output</p>
-  </div>
+<div class="hero-overlay"></div>
+
+<div class="hero-text">
+<h1>Publications</h1>
+<p>Scientific Contributions from the Kaur Computational Lab</p>
+</div>
+
 </header>
 
+
 <section class="section">
-  <p class="section-text">
-    A complete and up-to-date list of publications from the Kaur Lab can be found
-    on the Principal Investigator’s Google Scholar profile.
-  </p>
 
-  <div style="margin-top:40px;">
-    <a href="https://scholar.google.com/citations?hl=en&user=0_XOZu0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="button">
-      View Google Scholar
-    </a>
-  </div>
+<div class="pub-header">
 
-  <!-- Placeholder for future manual list -->
-  <div class="card-container" style="margin-top:50px;">
+<h2>Selected Publications</h2>
 
-    <div class="card">
-      <h3>Recent Publication</h3>
-      <p>
-        Author names, journal name, year.
-        <br><em>(Details will be updated soon)</em>
-      </p>
-    </div>
+<p class="section-text">
 
-    <div class="card">
-      <h3>Recent Publication</h3>
-      <p>
-        Author names, journal name, year.
-        <br><em>(Details will be updated soon)</em>
-      </p>
-    </div>
+Our research combines molecular dynamics simulations,
+computational biophysics, quantum chemistry,
+and multiscale modeling to understand biological energy conversion.
+Explore some of our recent publications below.
 
-  </div>
+</p>
+
+<a class="scholar-btn"
+href="https://scholar.google.com/citations?hl=en&user=0_XOZu0AAAAJ&view_op=list_works&sortby=pubdate"
+target="_blank">
+
+View Full Google Scholar →
+
+</a>
+
+</div>
+
+
+
+<div class="pub-list">
+
+<!-- Publication 1 -->
+
+<div class="pub-card">
+
+<div class="pub-title">
+
+Conserved Structure, Altered Energetics:
+Iron–Sulfur Clusters in Visible and Far-Red Light
+Acclimated Photosystem I
+
+</div>
+
+<div class="pub-authors">
+
+<strong>Authors:</strong>
+
+S. K. Sethy,
+J. Patel,
+G. A. Ranepura,
+D. Kaur
+
+</div>
+
+<div class="pub-journal">
+
+The Journal of Physical Chemistry B (2026)
+
+</div>
+
+<div class="pub-tags">
+
+<span class="pub-tag">Photosystem I</span>
+
+<span class="pub-tag">Iron–Sulfur Cluster</span>
+
+<span class="pub-tag">Electronic Structure</span>
+
+<span class="pub-tag">Computational Biophysics</span>
+
+</div>
+
+</div>
+
+
+
+<!-- Publication 2 -->
+
+<div class="pub-card">
+
+<div class="pub-title">
+
+Transcriptomic Remodeling of Light Harvesting and Photosystem Genes
+in Acaryochloris marina Under a Low-Irradiance Far-Red
+Versus High-Irradiance White Light
+
+</div>
+
+<div class="pub-authors">
+
+<strong>Authors:</strong>
+
+A. P. Karlapudi,
+V. K. Himabindhu,
+D. Kaur
+
+</div>
+
+<div class="pub-journal">
+
+Plants (2026)
+
+</div>
+
+<div class="pub-tags">
+
+<span class="pub-tag">Transcriptomics</span>
+
+<span class="pub-tag">Photosynthesis</span>
+
+<span class="pub-tag">Far-Red Light</span>
+
+<span class="pub-tag">Gene Expression</span>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <footer>
-  © Kaur Computational Lab
+
+© 2026 Kaur Computational Lab • Brock University
+
 </footer>
-<!-- JS -->
+
 <script src="js/script.js"></script>
 
 </body>
